@@ -153,7 +153,7 @@ else if ((x != '' || x != null) && (y != '' || y != null)){
     });
   $("#dboardlogout").click(function(){
  sessionStorage.setItem('Logics_loggedin', 'talas');
-        window.document.location.href = '/login';
+        window.document.location.href = '/login#';
 
       });
  });
