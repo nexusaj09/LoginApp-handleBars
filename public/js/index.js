@@ -26,7 +26,7 @@ $(document).ready(function(){
      $('#diverror').delay(2000).fadeOut();
 
 
-    return false;}
+    return true;}
   else if (x == null || x == "")
   {
     $("#lblerror").removeClass("hid");
@@ -35,7 +35,7 @@ $(document).ready(function(){
   $("#diverror").show();
      $('#diverror').delay(2000).fadeOut();
 
-    return false;
+    return true;
   }
   else if (y == null || y == "")
   {
@@ -44,7 +44,7 @@ $(document).ready(function(){
     document.getElementById("lblerror").innerHTML = "No Password";
   $("#diverror").show();
      $('#diverror').delay(2000).fadeOut();
-    return false;
+    return true;
   }
 else if ((x != '' || x != null) && (y != '' || y != null)){
     if (x == item.username && y == item.password){
