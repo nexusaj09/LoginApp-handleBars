@@ -48,7 +48,7 @@ $(document).ready(function(){
   }
 else if ((x != '' || x != null) && (y != '' || y != null)){
     if (x == item.username && y == item.password){
-    document.getElementById("con").value = x;
+    
      sessionStorage.setItem('Logics_loggedin', x);
     window.document.location.href = '/dashboard';
 
