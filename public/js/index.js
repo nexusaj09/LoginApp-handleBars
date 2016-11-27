@@ -71,7 +71,7 @@ else if ((x != '' || x != null) && (y != '' || y != null)){
     });
     });
      $("#btnreg").click(function(){
-     	 if($("#reg-password").val() == "" ) {
+ /*    	 if($("#reg-password").val() == ""  ) {
   
          $("#regerror").removeClass("hid");
            document.getElementById("regerror").style.color  = "red";
@@ -122,7 +122,7 @@ else if ((x != '' || x != null) && (y != '' || y != null)){
      $('#regerror').delay(2000).fadeOut();
   
       }
-      re = /[a-z]/;
+      re = /[a-z]/; 
       if($("#reg-password").val().match(re)) {
            $("#regerror").removeClass("hid");
            document.getElementById("regerror").style.color  = "red";
@@ -148,7 +148,30 @@ else if ((x != '' || x != null) && (y != '' || y != null)){
      $('#regerror').delay(2000).fadeOut();
  
     }
+    else if ($("#reg-username") != null && $("#re-pass") == $("#reg-password"))
+    {
+      
+      var data = [];
+      data[0] = {"username": $("#reg-username").value , "password": $("#reg-password")};
+      var tempdate = [];
+      for(var index = 0; index < data.length;index++)
+      {
+        tempdate.push(data);
+      }
+    }
 
+*/
+   if ($("#reg-username").val() != null && $("#re-pass").val() == $("#reg-password").val())
+    {
+      alert("asdasd");  
+      var data = [];
+      data[0] = {"username": $("#reg-username").val(), "password": $("#reg-password").val()};
+      var tempdate = [];
+      for(var index = 0; index < data.length;index++)
+      {
+        data.push();
+      }
+    }
 
     });
   $("#dboardlogout").click(function(){
